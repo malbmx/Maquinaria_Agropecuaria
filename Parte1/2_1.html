@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Principios de ingeniería aplicados a la maquinaria agropecuaria – Maquinaria Agropecuaria</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../U2/3_1.html" rel="next">
+<link href="../U1/1_6.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b50b862ad52c6f4bfc4cd83902c13abe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4a5c1634c9b390852243ee2976142ac6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b50b862ad52c6f4bfc4cd83902c13abe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../U1/cap1.html">Fundamentos de la maquinaria agropecuaria</a></li><li class="breadcrumb-item"><a href="../U1/2_1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Principios de ingeniería aplicados a la maquinaria agropecuaria</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Maquinaria Agropecuaria</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fundamentos de la maquinaria agropecuaria</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/cap1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a la maquinaria agropecuaria</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceptos de la maquinaría agropecuaria</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Evolución histórica de la maquinaria agropecuaria</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Importancia de la mecanización agropecuaria</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Situación de la mecanización en sistemas productivos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tendencias actuales en maquinaria agropecuaria</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/1_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Problemas prácticos y ejercicios aplicados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U1/2_1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Principios de ingeniería aplicados a la maquinaria agropecuaria</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tractores agrícolas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../U2/3_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Clasificación y características de los tractores</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#magnitudes-físicas-utilizadas-en-maquinaria" id="toc-magnitudes-físicas-utilizadas-en-maquinaria" class="nav-link active" data-scroll-target="#magnitudes-físicas-utilizadas-en-maquinaria"><span class="header-section-number">8.1</span> Magnitudes físicas utilizadas en maquinaria</a>
+  <ul class="collapse">
+  <li><a href="#sistema-internacional-de-unidades" id="toc-sistema-internacional-de-unidades" class="nav-link" data-scroll-target="#sistema-internacional-de-unidades"><span class="header-section-number">8.1.1</span> Sistema internacional de unidades</a></li>
+  <li><a href="#conversión-de-unidades" id="toc-conversión-de-unidades" class="nav-link" data-scroll-target="#conversión-de-unidades"><span class="header-section-number">8.1.2</span> Conversión de unidades</a></li>
+  <li><a href="#aplicaciones-en-maquinaria-agropecuaria" id="toc-aplicaciones-en-maquinaria-agropecuaria" class="nav-link" data-scroll-target="#aplicaciones-en-maquinaria-agropecuaria"><span class="header-section-number">8.1.3</span> Aplicaciones en maquinaria agropecuaria</a></li>
+  </ul></li>
+  <li><a href="#fuerza-trabajo-y-potencia" id="toc-fuerza-trabajo-y-potencia" class="nav-link" data-scroll-target="#fuerza-trabajo-y-potencia"><span class="header-section-number">8.2</span> Fuerza, trabajo y potencia</a>
+  <ul class="collapse">
+  <li><a href="#concepto-de-fuerza" id="toc-concepto-de-fuerza" class="nav-link" data-scroll-target="#concepto-de-fuerza"><span class="header-section-number">8.2.1</span> Concepto de fuerza</a></li>
+  <li><a href="#trabajo-mecánico" id="toc-trabajo-mecánico" class="nav-link" data-scroll-target="#trabajo-mecánico"><span class="header-section-number">8.2.2</span> Trabajo mecánico</a></li>
+  <li><a href="#potencia-mecánica" id="toc-potencia-mecánica" class="nav-link" data-scroll-target="#potencia-mecánica"><span class="header-section-number">8.2.3</span> Potencia mecánica</a></li>
+  <li><a href="#potencia-en-tractores-agrícolas" id="toc-potencia-en-tractores-agrícolas" class="nav-link" data-scroll-target="#potencia-en-tractores-agrícolas"><span class="header-section-number">8.2.4</span> Potencia en tractores agrícolas</a></li>
+  <li><a href="#problemas-1" id="toc-problemas-1" class="nav-link" data-scroll-target="#problemas-1"><span class="header-section-number">8.2.5</span> Problemas</a></li>
+  </ul></li>
+  <li><a href="#energía-en-maquinaria-agropecuaria" id="toc-energía-en-maquinaria-agropecuaria" class="nav-link" data-scroll-target="#energía-en-maquinaria-agropecuaria"><span class="header-section-number">8.3</span> Energía en maquinaria agropecuaria</a>
+  <ul class="collapse">
+  <li><a href="#energía-mecánica" id="toc-energía-mecánica" class="nav-link" data-scroll-target="#energía-mecánica"><span class="header-section-number">8.3.1</span> Energía mecánica</a></li>
+  <li><a href="#energía-térmica" id="toc-energía-térmica" class="nav-link" data-scroll-target="#energía-térmica"><span class="header-section-number">8.3.2</span> Energía térmica</a></li>
+  <li><a href="#energía-hidráulica" id="toc-energía-hidráulica" class="nav-link" data-scroll-target="#energía-hidráulica"><span class="header-section-number">8.3.3</span> Energía hidráulica</a></li>
+  <li><a href="#conversión-de-energía-en-maquinaria" id="toc-conversión-de-energía-en-maquinaria" class="nav-link" data-scroll-target="#conversión-de-energía-en-maquinaria"><span class="header-section-number">8.3.4</span> Conversión de energía en maquinaria</a></li>
+  </ul></li>
+  <li><a href="#resistencia-del-suelo-al-trabajo-mecánico" id="toc-resistencia-del-suelo-al-trabajo-mecánico" class="nav-link" data-scroll-target="#resistencia-del-suelo-al-trabajo-mecánico"><span class="header-section-number">8.4</span> Resistencia del suelo al trabajo mecánico</a>
+  <ul class="collapse">
+  <li><a href="#propiedades-físicas-del-suelo" id="toc-propiedades-físicas-del-suelo" class="nav-link" data-scroll-target="#propiedades-físicas-del-suelo"><span class="header-section-number">8.4.1</span> Propiedades físicas del suelo</a></li>
+  <li><a href="#compactación-del-suelo" id="toc-compactación-del-suelo" class="nav-link" data-scroll-target="#compactación-del-suelo"><span class="header-section-number">8.4.2</span> Compactación del suelo</a></li>
+  <li><a href="#fuerzas-de-corte-durante-la-labranza" id="toc-fuerzas-de-corte-durante-la-labranza" class="nav-link" data-scroll-target="#fuerzas-de-corte-durante-la-labranza"><span class="header-section-number">8.4.3</span> Fuerzas de corte durante la labranza</a></li>
+  <li><a href="#factores-que-afectan-la-resistencia-del-suelo" id="toc-factores-que-afectan-la-resistencia-del-suelo" class="nav-link" data-scroll-target="#factores-que-afectan-la-resistencia-del-suelo"><span class="header-section-number">8.4.4</span> Factores que afectan la resistencia del suelo</a></li>
+  </ul></li>
+  <li><a href="#potencia-requerida-para-implementos-agrícolas" id="toc-potencia-requerida-para-implementos-agrícolas" class="nav-link" data-scroll-target="#potencia-requerida-para-implementos-agrícolas"><span class="header-section-number">8.5</span> Potencia requerida para implementos agrícolas</a>
+  <ul class="collapse">
+  <li><a href="#cálculo-de-potencia-requerida" id="toc-cálculo-de-potencia-requerida" class="nav-link" data-scroll-target="#cálculo-de-potencia-requerida"><span class="header-section-number">8.5.1</span> Cálculo de potencia requerida</a></li>
+  <li><a href="#factores-que-afectan-la-demanda-de-potencia" id="toc-factores-que-afectan-la-demanda-de-potencia" class="nav-link" data-scroll-target="#factores-que-afectan-la-demanda-de-potencia"><span class="header-section-number">8.5.2</span> Factores que afectan la demanda de potencia</a></li>
+  <li><a href="#selección-adecuada-del-tractor" id="toc-selección-adecuada-del-tractor" class="nav-link" data-scroll-target="#selección-adecuada-del-tractor"><span class="header-section-number">8.5.3</span> Selección adecuada del tractor</a></li>
+  </ul></li>
+  <li><a href="#problemas-prácticos" id="toc-problemas-prácticos" class="nav-link" data-scroll-target="#problemas-prácticos"><span class="header-section-number">8.6</span> Problemas prácticos</a>
+  <ul class="collapse">
+  <li><a href="#cálculo-de-potencia-requerida-para-implementos" id="toc-cálculo-de-potencia-requerida-para-implementos" class="nav-link" data-scroll-target="#cálculo-de-potencia-requerida-para-implementos"><span class="header-section-number">8.6.1</span> Cálculo de potencia requerida para implementos</a></li>
+  <li><a href="#determinación-de-fuerza-de-tiro" id="toc-determinación-de-fuerza-de-tiro" class="nav-link" data-scroll-target="#determinación-de-fuerza-de-tiro"><span class="header-section-number">8.6.2</span> Determinación de fuerza de tiro</a></li>
+  <li><a href="#evaluación-de-eficiencia-energética" id="toc-evaluación-de-eficiencia-energética" class="nav-link" data-scroll-target="#evaluación-de-eficiencia-energética"><span class="header-section-number">8.6.3</span> Evaluación de eficiencia energética</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../U1/cap1.html">Fundamentos de la maquinaria agropecuaria</a></li><li class="breadcrumb-item"><a href="../U1/2_1.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Principios de ingeniería aplicados a la maquinaria agropecuaria</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Principios de ingeniería aplicados a la maquinaria agropecuaria</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="magnitudes-físicas-utilizadas-en-maquinaria" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="magnitudes-físicas-utilizadas-en-maquinaria"><span class="header-section-number">8.1</span> Magnitudes físicas utilizadas en maquinaria</h2>
+<p>La maquinaria agropecuaria requiere el manejo preciso de magnitudes físicas y sus unidades de medida. La correcta aplicación del Sistema Internacional de Unidades (SI) es indispensable para el calculo, diseño, selección y evaluación de equipos agrícolas.</p>
+<section id="sistema-internacional-de-unidades" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="sistema-internacional-de-unidades"><span class="header-section-number">8.1.1</span> Sistema internacional de unidades</h3>
+<p>Se establecen siete unidades fundamentales de las cuales se derivan las demás unidades utilizadas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Magnitud fundamental</strong></th>
+<th><strong>Unidad SI</strong></th>
+<th><strong>Símbolo</strong></th>
+<th><strong>Aplicación en Maquinaria</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Longitud</td>
+<td>Metro</td>
+<td>m</td>
+<td>Dimensiones de máquinas, profundidad de labranza, ancho de labor</td>
+</tr>
+<tr class="even">
+<td>Masa</td>
+<td>Kilogramo</td>
+<td>kg</td>
+<td>Peso de equipos, ballast, carga util, capacidad de tolvas</td>
+</tr>
+<tr class="odd">
+<td>Tiempo</td>
+<td>Segundo</td>
+<td>s</td>
+<td>Velocidad de avance, capacidad de trabajo, ciclos de operación.</td>
+</tr>
+<tr class="even">
+<td>Corriente electrica</td>
+<td>Amperio</td>
+<td>A</td>
+<td>Sistemas electricos y electronica de maquinaria.</td>
+</tr>
+<tr class="odd">
+<td>Temperatura</td>
+<td>Kelvin</td>
+<td>K</td>
+<td>Motor termico, fluidos hidraulicos, lubricantes.</td>
+</tr>
+<tr class="even">
+<td>Cantidad de sustancia</td>
+<td>Mol</td>
+<td>mol</td>
+<td>Combustibles, lubricantes, analisis quimicos.</td>
+</tr>
+<tr class="odd">
+<td>Intensidad luminosa</td>
+<td>Candela</td>
+<td>cd</td>
+<td>Sistemas de iluminacion de tractores y equipos.</td>
+</tr>
+</tbody>
+</table>
+<p>Asimismo, de estas unidades fundamentales se obtienen las magnitudes derivadas o compuestas utilizadas en maquinaría agropecuaria.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Magnitud Derivada</strong></td>
+<td><strong>Unidad SI</strong></td>
+<td><strong>Simbolo</strong></td>
+<td><strong>Equivalencia</strong></td>
+</tr>
+<tr class="even">
+<td>Fuerza</td>
+<td>Newton</td>
+<td>N</td>
+<td>1 N = 1 kg*m/s<span class="math display">\[^2\]</span></td>
+</tr>
+<tr class="odd">
+<td>Presion / Tension</td>
+<td>Pascal</td>
+<td>Pa</td>
+<td>1 Pa = 1 N/m<span class="math display">\[^2\]</span></td>
+</tr>
+<tr class="even">
+<td>Energia / Trabajo</td>
+<td>Julio</td>
+<td>J</td>
+<td>1 J = 1 N*m</td>
+</tr>
+<tr class="odd">
+<td>Potencia</td>
+<td>Vatio</td>
+<td>W</td>
+<td>1 W = 1 J/s = 1 N*m/s</td>
+</tr>
+<tr class="even">
+<td>Frecuencia</td>
+<td>Hercio</td>
+<td>Hz</td>
+<td>1 Hz = 1 ciclo/s</td>
+</tr>
+<tr class="odd">
+<td>Velocidad</td>
+<td>Metro/segundo</td>
+<td>m/s</td>
+<td>1 m/s = 3.6 km/h</td>
+</tr>
+<tr class="even">
+<td>Aceleración</td>
+<td>Metro/segundo<span class="math display">\[^2\]</span></td>
+<td>m/s<span class="math display">\[^2\]</span></td>
+<td>g = 9.81 m/s<span class="math display">\[^2\]</span></td>
+</tr>
+<tr class="odd">
+<td>Densidad</td>
+<td>Kilogramo/metro^3</td>
+<td>kg/m^3</td>
+<td>Agua: 1000 kg/m<span class="math display">\[^3\]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conversión-de-unidades" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="conversión-de-unidades"><span class="header-section-number">8.1.2</span> Conversión de unidades</h3>
+<p>coexisten diferentes sistemas de unidades: el SI (sistema metrico decimal), el sistema anglosajón (pies, libras, caballos de vapor) y unidades agrarias tradicionales. El tecnico debe dominar las conversiones mas frecuentes para interpretar fichas técnicas de maquinaria, muchas de las cuales se expresan en unidades mixtas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 24%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Magnitud</strong></td>
+<td><strong>Unidad 1</strong></td>
+<td><strong>Factor de conversion</strong></td>
+<td><strong>Unidad 2</strong></td>
+</tr>
+<tr class="even">
+<td>Potencia</td>
+<td>1 HP (caballo de vapor)</td>
+<td>=$$ 0.7457 kW$$</td>
+<td>Kilowatt</td>
+</tr>
+<tr class="odd">
+<td>Potencia</td>
+<td>1 kW</td>
+<td>=$$ 1.341 HP</td>
+<td>Caballos de vapor</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Potencia</td>
+<td>1 CV (caballo de vapor metrico)</td>
+<td>= 0.7355 kW</td>
+<td>Kilowatt</td>
+</tr>
+<tr class="even">
+<td>Fuerza</td>
+<td>1 kN (kilonewton)</td>
+<td>= 101.97 kgf</td>
+<td>Kilogramos-fuerza</td>
+</tr>
+<tr class="odd">
+<td>Fuerza</td>
+<td>1 kgf</td>
+<td>= 9.807 N</td>
+<td>Newton</td>
+</tr>
+<tr class="even">
+<td>Presion</td>
+<td>1 bar</td>
+<td>= 100 kPa = 14.5 psi</td>
+<td>Pascal / psi</td>
+</tr>
+<tr class="odd">
+<td>Presion</td>
+<td>1 MPa</td>
+<td>= 145 psi = 10.2 kgf/cm^2</td>
+<td>Mega Pascal</td>
+</tr>
+<tr class="even">
+<td>Velocidad</td>
+<td>1 km/h</td>
+<td>= 0.2778 m/s</td>
+<td>Metro/segundo</td>
+</tr>
+<tr class="odd">
+<td>Torque</td>
+<td>1 N*m</td>
+<td>= 0.1020 kgf*m</td>
+<td>Kilogramo-fuerza*metro</td>
+</tr>
+<tr class="even">
+<td>Superficie</td>
+<td>1 hectarea (ha)</td>
+<td>= 10,000 m^2</td>
+<td>Metro cuadrado</td>
+</tr>
+<tr class="odd">
+<td>Superficie</td>
+<td>1 acre</td>
+<td>= 0.4047 ha</td>
+<td>Hectarea</td>
+</tr>
+<tr class="even">
+<td>Volumen</td>
+<td>1 litro</td>
+<td>= 0.001 m^3 = 1 dm^3</td>
+<td>Metro cubico</td>
+</tr>
+<tr class="odd">
+<td>Masa</td>
+<td>1 tonelada (t)</td>
+<td>= 1000 kg = 2204.6 lb</td>
+<td>Kilogramo / Libras</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aplicaciones-en-maquinaria-agropecuaria" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="aplicaciones-en-maquinaria-agropecuaria"><span class="header-section-number">8.1.3</span> Aplicaciones en maquinaria agropecuaria</h3>
+<p>Entre las aplicaciones de unidades más comunes son por ejemplo:</p>
+<div class="ejemplo">
+<ul>
+<li><p><strong>Presión de neumaticos:</strong> Se expresa en kPa, bar o psi. Una presion correcta reduce la compactacion del suelo y optimiza la traccion. Rango tipico en tractores: 80-180 kPa (1.0-1.8 bar) segun carga y condicion del suelo.</p></li>
+<li><p><strong>Presión del sistema hidraulico:</strong> Los sistemas hidráulicos de tractores modernos trabajan a presiones de 18-25 MPa (180-250 bar). La presion determina la fuerza maxima que puede ejercer el cilindro hidraulico.</p></li>
+<li><p><strong>Torque del motor:</strong> Expresado en N*m, determina la capacidad del motor para vencer resistencias bajo carga. Un motor de tractor de mediana potencia puede generar 400-800 N*m de torque maximo.</p></li>
+<li><p><strong>Velocidad de avance:</strong> La velocidad de trabajo se expresa en km/h o m/s. Las operaciones agrícolas tipicas se realizan entre 5 y 12 km/h, siendo este parametro determinante en la capacidad de campo efectiva.</p></li>
+<li><p><strong>Caudal hidraulico:</strong> Expresado en L/min, determina la velocidad de operación de los actuadores hidráulicos de los implementos acoplados al tractor.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="fuerza-trabajo-y-potencia" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="fuerza-trabajo-y-potencia"><span class="header-section-number">8.2</span> Fuerza, trabajo y potencia</h2>
+<p>En los sistemas mecanizados agrícolas, las fuerzas generadas por el tractor y transmitidas a los implementos permiten realizar operaciones como la labranza, siembra, fertilización, cultivo y cosecha.</p>
+<section id="concepto-de-fuerza" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="concepto-de-fuerza"><span class="header-section-number">8.2.1</span> Concepto de fuerza</h3>
+<p>La fuerza es toda acción capaz de modificar el estado de movimiento o reposo de un cuerpo o producir una deformación.</p>
+<p>En maquinaria agrícola, la fuerza se manifiesta principalmente como:</p>
+<ul>
+<li><p>Fuerza de tracción del tractor.</p></li>
+<li><p>Resistencia del suelo.</p></li>
+<li><p>Fuerza necesaria para arrastrar implementos</p></li>
+</ul>
+<div class="definicion">
+<p>La <strong>fuerza</strong> es toda causa capaz de modificar el estado de reposo o de movimiento de un cuerpo, o de deformarlo. En la segunda ley de Newton, la fuerza es proporcional a la masa del cuerpo y a la aceleración que se le imprime:</p>
+<p>Segunda Ley de Newton: <span class="math display">\[
+F = m \cdot \vec{a}
+\]</span> Donde:</p>
+<ul>
+<li><p><span class="math inline">\(F\)</span>: Fuerza (<span class="math inline">\(N\)</span>).</p></li>
+<li><p><span class="math inline">\(m\)</span>: Masa (<span class="math inline">\(kg\)</span>).</p></li>
+<li><p><span class="math inline">\(\vec{a}\)</span>: Aceleración (<span class="math inline">\(m/s^2\)</span>).</p></li>
+</ul>
+</div>
+<div class="nota">
+<p>El peso de un cuerpo se expresa como <span class="math inline">\(W=m\cdot g\)</span></p>
+</div>
+<div class="definicion">
+<p>La <strong>fuerza de tracción</strong> es la fuerza que el tractor transmite al implemento para realizar trabajo.</p>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 24%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Tipo de Fuerza</strong></td>
+<td><strong>Descripción</strong></td>
+<td><strong>Aplicación en Maquinaria</strong></td>
+<td><strong>Rango Tipico</strong></td>
+</tr>
+<tr class="even">
+<td>Fuerza de tiro (Ft)</td>
+<td>Fuerza horizontal que el tractor ejerce sobre el implemento para vencer la resistencia al avance</td>
+<td>Arado, rastra, sembradora, subsolador</td>
+<td>5 - 80 kN</td>
+</tr>
+<tr class="odd">
+<td>Fuerza de compresion</td>
+<td>Fuerza normal aplicada verticalmente sobre la superficie del suelo</td>
+<td>Rodillos compactadores, neumaticos</td>
+<td>10 - 50 kN</td>
+</tr>
+<tr class="even">
+<td>Fuerza de corte</td>
+<td>Fuerza que actua tangencialmente para separar particulas del suelo</td>
+<td>Rejas de arado, cuchillas de fresa</td>
+<td>1 - 20 kN</td>
+</tr>
+<tr class="odd">
+<td>Fuerza de friccion</td>
+<td>Resistencia al deslizamiento entre superficies en contacto</td>
+<td>Neumatico-suelo, frenos, embragues</td>
+<td>Variable</td>
+</tr>
+<tr class="even">
+<td>Peso (fuerza gravitacional)</td>
+<td>Acción del campo gravitatorio sobre la masa del equipo</td>
+<td>Ballast, carga de tolvas, estabilidad</td>
+<td>5 - 200 kN</td>
+</tr>
+</tbody>
+</table>
+<div class="nota">
+<p>La fuerza de tiro (Ft) que el tractor debe suministrar es igual a la sumatoria de todas las resistencias que actúan sobre el tren implemento-maquina. La ecuación de equilibrio es: <span class="math display">\[
+Ft = R_{suelo} + R_{pendiente} + R_{inercia} + R_{rodadura}
+\]</span> Donde cada componente representa la resistencia ofrecida por: la labranza del suelo, la inclinacion del terreno, la aceleracion/desaceleracion de masas, y el rodamiento de los neumaticos respectivamente.</p>
+</div>
+</section>
+<section id="trabajo-mecánico" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="trabajo-mecánico"><span class="header-section-number">8.2.2</span> Trabajo mecánico</h3>
+<p>El trabajo mecánico se realiza cuando una fuerza desplaza un cuerpo una cierta distancia.</p>
+<div class="definicion">
+<p>Trabajo mecánico es la energía transferida a un cuerpo cuando una fuerza lo desplaza en la dirección de su aplicación. Es el producto escalar entre el vector fuerza y el vector desplazamiento.</p>
+</div>
+<div class="ecuacion">
+<p><span class="math display">\[
+  W = F \cdot d \cdot cos(\theta)
+\]</span> <span class="math inline">\(W\)</span>: Trabajo (J o N*m).</p>
+<p><span class="math inline">\(F\)</span>: Fuerza aplicada (N).</p>
+<p><span class="math inline">\(d\)</span>: Desplazamiento (m).</p>
+<p><span class="math inline">\(\theta\)</span>: Angulo entre la fuerza y la dirección del desplazamiento.</p>
+</div>
+<div class="nota">
+<p>Si <span class="math inline">\(F\)</span> y <span class="math inline">\(d\)</span> son paralelos (<span class="math inline">\(\theta = 0\)</span>): <span class="math inline">\(W=F\cdot d\)</span>.</p>
+</div>
+<p>En operaciones agrícolas, el trabajo mecánico por hectárea es un indicador fundamental del consumo energético de cada operación.</p>
+<div class="ecuacion">
+<p><span class="math display">\[
+W/ha = Ft \cdot \dfrac{10000}{ancho_{labor}}
+\]</span></p>
+</div>
+<section id="problemas" class="level4" data-number="8.2.2.1">
+<h4 data-number="8.2.2.1" class="anchored" data-anchor-id="problemas"><span class="header-section-number">8.2.2.1</span> Problemas</h4>
+<div class="ejercicio">
+<p>Un tractor arrastra una rastra ejerciendo una fuerza de tracción de 2500 N durante una distancia de 150 m.</p>
+<p>Calcular el trabajo mecánico realizado.</p>
+<p>Ecuación a utilizar: <span class="math display">\[W=F\cdot d\]</span> <span class="math inline">\(W\)</span>: Trabajo (J). <span class="math inline">\(F\)</span>: Fuerza aplicada (N). <span class="math inline">\(d\)</span>: Distancia recorrida (m).</p>
+<div class="spoiler">
+<p>Resultado: 375000 J = 375 kJ.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="potencia-mecánica" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="potencia-mecánica"><span class="header-section-number">8.2.3</span> Potencia mecánica</h3>
+<p>La potencia mide la rapidez con la que se realiza un trabajo. La potencia mecanica es la razon a la que se realiza trabajo, es decir, el trabajo realizado por unidad de tiempo. Es la magnitud que determina la capacidad del motor o del sistema de traccion para ejecutar una operacion a una velocidad determinada.</p>
+<div class="formula">
+<p><span class="math display">\[
+  P = \dfrac{W}{t} = F \cdot \vec{v}
+\]</span> <span class="math inline">\(P\)</span>: Potencia <span class="math inline">\(W\)</span>.</p>
+<p><span class="math inline">\(W\)</span>: Trabajo <span class="math inline">\(J\)</span>.</p>
+<p><span class="math inline">\(t\)</span>: Tiempo <span class="math inline">\(s\)</span>.</p>
+<p><span class="math inline">\(F\)</span>: Fuerza <span class="math inline">\(N\)</span>.</p>
+<p><span class="math inline">\(\vec{v}\)</span>: Velocidad <span class="math inline">\(m/s\)</span>.</p>
+</div>
+<div class="importante">
+<p>Para calculos prácticos queda: <span class="math display">\[
+P(kW) = Ft(kN) \cdot \dfrac{\vec{v}}{3.6}
+\]</span></p>
+</div>
+<div class="ejemplo">
+<p>Ejemplo: un arado que requiere 30 kN de fuerza de tiro operando a 7 km/h demanda: <span class="math inline">\(P = 30 kN \cdot 7/3.6 = 58.3 kW\)</span> de potencia en la barra de tiro.</p>
+</div>
+</section>
+<section id="potencia-en-tractores-agrícolas" class="level3" data-number="8.2.4">
+<h3 data-number="8.2.4" class="anchored" data-anchor-id="potencia-en-tractores-agrícolas"><span class="header-section-number">8.2.4</span> Potencia en tractores agrícolas</h3>
+<p>El tractor agrícola entrega potencia a través de varios puntos de salida, cada uno con sus propias características y eficiencias. Es fundamental distinguir estos conceptos para la correcta selección y evaluación de equipos.</p>
+<div class="definicion">
+<p>La <strong>potencia del tractor</strong> representa la capacidad del motor para realizar trabajo en un tiempo determinado.</p>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 27%">
+<col style="width: 24%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Punto de Potencia</strong></td>
+<td><strong>Abreviatura</strong></td>
+<td><strong>Descripcion</strong></td>
+<td><strong>Perdidas tipicas</strong></td>
+</tr>
+<tr class="even">
+<td>Potencia indicada del motor</td>
+<td>Pi</td>
+<td>Potencia bruta generada en los cilindros por la combustion del combustible</td>
+<td>Referencia (100%)</td>
+</tr>
+<tr class="odd">
+<td>Potencia efectiva al freno (motor)</td>
+<td>Pe o PTO_eng</td>
+<td>Potencia neta disponible en el ciguenal del motor, descontadas las perdidas internas</td>
+<td>8 - 12% de Pi</td>
+</tr>
+<tr class="even">
+<td>Potencia en la TDF (toma de fuerza)</td>
+<td>PTDF o PTO</td>
+<td>Potencia disponible en el eje de la TDF (540 o 1000 rpm). Medida estandar de comparacion</td>
+<td>10 - 15% de Pi</td>
+</tr>
+<tr class="odd">
+<td>Potencia en la barra de tiro</td>
+<td>PBT</td>
+<td>Potencia disponible en el gancho de tiro, descontadas las perdidas en la transmision y en la interaccion neumatico-suelo</td>
+<td>25 - 40% de Pi</td>
+</tr>
+<tr class="even">
+<td>Potencia hidraulica</td>
+<td>Ph</td>
+<td>Potencia disponible en el sistema hidraulico del tractor para accionar cilindros e motores hidraulicos</td>
+<td>15 - 25% de Pi</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="problemas-1" class="level3" data-number="8.2.5">
+<h3 data-number="8.2.5" class="anchored" data-anchor-id="problemas-1"><span class="header-section-number">8.2.5</span> Problemas</h3>
+<p>Un tractor ejerce una fuerza de 2500 N para arrastrar un implemento durante 150 m.</p>
+<p>Calcular el *trabajo realizado.</p>
+<p>Resultado esperado:</p>
+<p>W=375000 JW = 375000 , JW=375000J</p>
+</section>
+</section>
+<section id="energía-en-maquinaria-agropecuaria" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="energía-en-maquinaria-agropecuaria"><span class="header-section-number">8.3</span> Energía en maquinaria agropecuaria</h2>
+<p>La maquinaria agropecuaria convierte diferentes formas de energia para realizar las operaciones productivas. La comprension de los principios energeticos permite optimizar el uso de combustibles, lubricantes y fluidos de trabajo, reduciendo costos operativos e impacto ambiental.</p>
+<section id="energía-mecánica" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="energía-mecánica"><span class="header-section-number">8.3.1</span> Energía mecánica</h3>
+<div class="definicion">
+<p>La <strong>energia mecánica</strong> es la suma de la energía cinética (asociada al movimiento) y la energía potencial (asociada a la posición en un campo gravitatorio o elástico) de los componentes del sistema.</p>
+</div>
+<div class="formula">
+<p>**Energía cinética y potencial* <span class="math display">\[
+EC = \dfrac{1}{2} \cdot m \cdot \vec{v}^2
+\]</span></p>
+<p><span class="math display">\[
+EP = m \cdot g \cdot h
+\]</span> Donde:</p>
+<p><span class="math inline">\(EC\)</span>: Energía cinética (J).</p>
+<p><span class="math inline">\(m\)</span>: Masa (Kg).</p>
+<p><span class="math inline">\(\vec{v}\)</span>: Velocidad (m/s)</p>
+<p><span class="math inline">\(EP\)</span>: Energía potencial gravitatoria (J).</p>
+<p><span class="math inline">\(g\)</span>: Gravedad (m/s<span class="math inline">\(^2\)</span>).</p>
+<p><span class="math inline">\(h\)</span>: Altura (m).</p>
+</div>
+</section>
+<section id="energía-térmica" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="energía-térmica"><span class="header-section-number">8.3.2</span> Energía térmica</h3>
+<p>El motor de combustión interna es la fuente primaria de energía de los tractores. El rendimiento de este proceso esta descritopor el rendimiento térmico del ciclo.</p>
+<div class="formula">
+<p>¨<strong>Rendimiento térmico del motor diesel</strong></p>
+<p><span class="math display">\[
+\eta_t  = \dfrac{Trabajo\_util}{Calor\_aportado} = \dfrac{W_{neto}}{Q_{Combustible}}
+\]</span></p>
+</div>
+<p>Los motores diesel de los tractores alcanzan <span class="math inline">\(n_5\)</span> entre 38 - 45%, el resto se disipa en forma de calor al sistema de refrigeración.</p>
+<div class="ecuacion">
+<p><strong>Consumo de combustible por operación</strong></p>
+<p>La formula práctica para estimar el consumo de combustible para operaciones agrícolas es:</p>
+<p><span class="math display">\[
+Q [L/h] = P\_motor [kW] * Factor\_carga * \dfrac{consumo\_espeficio\_combustible [g/kWh]}  {densidad\_gasoil [g/L]}
+\]</span></p>
+<p>Una forma más simplificada: <span class="math display">\[
+Q[L/h] = P\_motor \cdot 0.22 \cdot Factor\_carga
+\]</span> El factor carga varia entre 0.6 - 0.85 en labranza</p>
+</div>
+</section>
+<section id="energía-hidráulica" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="energía-hidráulica"><span class="header-section-number">8.3.3</span> Energía hidráulica</h3>
+<p>Los sistemas hidráulicos de los tractores modernos transmiten potencia mediante un fluido a presion (aceite hidraulico) para accionar cilindros hidraulicos (movimiento lineal) y motores hidraulicos (movimiento rotativo) en los implementos y en los propios sistemas del tractor.</p>
+<div class="ecuacion">
+<p><strong>Potencia hidráulica</strong></p>
+<p><span class="math display">\[
+Ph = p * Q
+\]</span> __ ::</p>
+</div>
+</section>
+<section id="conversión-de-energía-en-maquinaria" class="level3" data-number="8.3.4">
+<h3 data-number="8.3.4" class="anchored" data-anchor-id="conversión-de-energía-en-maquinaria"><span class="header-section-number">8.3.4</span> Conversión de energía en maquinaria</h3>
+<p>En el tractor agricola se producen multiples conversiones de energia que determinan el rendimiento energetico global del sistema. El diagrama de flujo de energia en un tractor operando con un implemento de labranza ilustra estas transformaciones:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Etapa de Conversion</strong></td>
+<td><strong>Entrada</strong></td>
+<td><strong>Salida Util</strong></td>
+<td><strong>Perdidas</strong></td>
+<td><strong>Eficiencia Tipica</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Motor termico</td>
+<td>Energia quimica (gasoil)</td>
+<td>Trabajo mecanico (ciguenal)</td>
+<td>Calor (refrigeracion + escape)</td>
+<td>38 - 45%</td>
+</tr>
+<tr class="even">
+<td>Transmision mecanica</td>
+<td>Potencia motor (ciguenal)</td>
+<td>Potencia en TDF</td>
+<td>Friccion en engranajes y juntas</td>
+<td>90 - 95%</td>
+</tr>
+<tr class="odd">
+<td>Interaccion neumatico-suelo</td>
+<td>Potencia en rueda motriz</td>
+<td>Potencia de traccion (barra)</td>
+<td>Patinamiento y deformacion del suelo</td>
+<td>70 - 85%</td>
+</tr>
+<tr class="even">
+<td>Implemento de labranza</td>
+<td>Potencia en barra de tiro</td>
+<td>Trabajo de labranza (suelo)</td>
+<td>Friccion interna del implemento</td>
+<td>85 - 95%</td>
+</tr>
+<tr class="odd">
+<td>Sistema hidraulico</td>
+<td>Potencia mecanica (bomba)</td>
+<td>Potencia hidraulica (cilindros)</td>
+<td>Friccion fluido, fugas internas</td>
+<td>75 - 88%</td>
+</tr>
+<tr class="even">
+<td>SISTEMA COMPLETO</td>
+<td>Energia quimica combustible</td>
+<td>Trabajo de labranza efectivo</td>
+<td>Suma de todas las perdidas</td>
+<td>22 - 32%</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="resistencia-del-suelo-al-trabajo-mecánico" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="resistencia-del-suelo-al-trabajo-mecánico"><span class="header-section-number">8.4</span> Resistencia del suelo al trabajo mecánico</h2>
+<p>El suelo agricola no es un material homogeneo ni isotropo: su comportamiento ante el trabajo mecanico depende de una compleja interaccion de propiedades fisicas, quimicas y biologicas que determinan la resistencia que ofrece a los implementos de labranza. El conocimiento de estas propiedades es esencial para la seleccion y regulacion de la maquinaria.</p>
+<section id="propiedades-físicas-del-suelo" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="propiedades-físicas-del-suelo"><span class="header-section-number">8.4.1</span> Propiedades físicas del suelo</h3>
+<p>Las propiedades fisicas del suelo que mas influyen en su respuesta ante el trabajo mecanico son:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Propiedad</strong></td>
+<td><strong>Definicion</strong></td>
+<td><strong>Unidad</strong></td>
+<td><strong>Efecto sobre la Maquinaria</strong></td>
+</tr>
+<tr class="even">
+<td>Textura</td>
+<td>Distribucion porcentual de arena, limo y arcilla</td>
+<td>% en cada fraccion</td>
+<td>Suelos arcillosos: mayor resistencia; arenosos: menor resistencia pero menor cohesion</td>
+</tr>
+<tr class="odd">
+<td>Contenido de humedad (θ)</td>
+<td>Masa de agua por unidad de masa de suelo seco</td>
+<td>% en masa o m^3/m^3</td>
+<td>Humedad optima reduce la resistencia especifica de labranza en 20-40%</td>
+</tr>
+<tr class="even">
+<td>Densidad aparente (ρb)</td>
+<td>Masa de suelo seco por unidad de volumen total</td>
+<td>g/cm^3 o Mg/m^3</td>
+<td>Alta densidad indica compactacion; ρb &gt; 1.6 g/cm^3 limita el desarrollo radicular</td>
+</tr>
+<tr class="odd">
+<td>Resistencia a la penetracion (RP)</td>
+<td>Fuerza por unidad de area para penetrar el suelo con una sonda estandar</td>
+<td>MPa o kPa</td>
+<td>RP &gt; 2 MPa inhibe el crecimiento de raices; RP &gt; 3 MPa requiere subsolacion</td>
+</tr>
+<tr class="even">
+<td>Cohesion (c)</td>
+<td>Resistencia interna del suelo por enlaces entre particulas</td>
+<td>kPa</td>
+<td>Alta cohesion en suelos arcillosos humedos: pegajosidad y resistencia al corte</td>
+</tr>
+<tr class="odd">
+<td>Angulo de friccion interna (phi)</td>
+<td>Parametro de resistencia al cortante por friccion entre particulas</td>
+<td>grados sexagesimales</td>
+<td>Determina la resistencia de friccion sobre las superficies de los implementos</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="compactación-del-suelo" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="compactación-del-suelo"><span class="header-section-number">8.4.2</span> Compactación del suelo</h3>
+<p>La compactacion es el proceso de aumento de la densidad aparente del suelo por la reduccion del volumen de poros, causada por la aplicacion de cargas mecanicas (maquinaria agricola) o por procesos naturales (lluvias intensas, ciclos de hume-desecamiento). Es uno de los principales impactos negativos del uso de maquinaria pesada en suelos agricolas.</p>
+<p>Factores que determinan el riesgo de compactacion por maquinaria:</p>
+<ul>
+<li><p>Carga sobre el suelo (masa total del equipo + implemento): a mayor masa, mayor riesgo. Los tractores modernos de alta potencia pueden superar 10-15 toneladas de masa total.</p></li>
+<li><p>Presion de contacto neumatico-suelo: depende del tamano del neumatico y la presión de inflado. Neumáticos grandes con baja presión distribuyen mejor la carga.</p></li>
+<li><p>Contenido de humedad del suelo: suelos húmedos son mas susceptibles a la compactacion. Existe un contenido de humedad critico por encima del cual el riesgo es maximo.</p></li>
+<li><p>Numero de pasadas: cada pasada adicional agrava la compactacion, especialmente en los primeros 20-30 cm del perfil (zona de influencia directa de los neumáticos).</p></li>
+<li><p>Textura del suelo: los suelos de textura media (francos) son los mas susceptibles a la compactación permanente.</p></li>
+</ul>
+</section>
+<section id="fuerzas-de-corte-durante-la-labranza" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="fuerzas-de-corte-durante-la-labranza"><span class="header-section-number">8.4.3</span> Fuerzas de corte durante la labranza</h3>
+<p>El proceso de labranza implica la fragmentacion y desplazamiento de la masa de suelo mediante la acción de elementos de trabajo (rejas, discos, cuchillas). La resistencia del suelo al cortante se describe mediante el criterio de Mohr-Coulomb:</p>
+<div class="formula">
+<p><strong>Criterio de resistencia al cortante de Mohr-Coulomb</strong></p>
+<p><span class="math display">\[
+\tau = c + \sigma_n \cdot tan(\phi)
+\]</span> Donde:</p>
+<ul>
+<li><span class="math inline">\(\tau\)</span> tensión de corte máxima (kPa).</li>
+<li><span class="math inline">\(c\)</span> cohesión del suelo (kPa).</li>
+<li><span class="math inline">\(\sigma_n\)</span> tensión normal sobre el plano de corte (kPa). . <span class="math inline">\(\phi\)</span>: angulo de fricción interna del suelo (grados).</li>
+</ul>
+</div>
+<p>La resistencia especifica de labranza (k), tambien denominada resistencia al tiro especifica, relaciona la fuerza de tiro requerida con el area de la seccion transversal del surco.</p>
+<div class="formula">
+<p>** Resistencia Especifica de labranza ** <span class="math display">\[
+k = \dfrac{Ft}{a \cdot p}  
+\]</span> <span class="math display">\[
+Ft = k \cdot a \cdot p
+\]</span> Donde:</p>
+<ul>
+<li><span class="math inline">\(k\)</span>: resistencia específica [N/cm<span class="math inline">\(^2\)</span>].</li>
+<li><span class="math inline">\(Ft\)</span>: fuerza de tiro total [N o kN].</li>
+<li><span class="math inline">\(a\)</span>: ancho del surco (cm o m)</li>
+<li><span class="math inline">\(p\)</span>: profundidad de labranza (cm o m).</li>
+</ul>
+<p>Valores típicos de <span class="math inline">\(k = 20 - 80 \hspace{0.2cm} N/cm^2\)</span></p>
+</div>
+</section>
+<section id="factores-que-afectan-la-resistencia-del-suelo" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="factores-que-afectan-la-resistencia-del-suelo"><span class="header-section-number">8.4.4</span> Factores que afectan la resistencia del suelo</h3>
+<p>La resistencia que el suelo ofrece a los implementos de labranza no es constante sino que varia en funcion de multiples factores agronomicos y operacionales:</p>
+<ul>
+<li><p>Contenido de humedad: Existe una humedad optima de labranza (generalmente entre el 60 y 80% de la capacidad de campo) en la que la resistencia es minima y la calidad del trabajo es maxima. Labrar fuera de este rango aumenta la demanda energetica y degrada la estructura del suelo.</p></li>
+<li><p>Profundidad de labranza: La resistencia al tiro aumenta proporcionalmente con la profundidad (relacion lineal segun la ecuacion de resistencia especifica). Duplicar la profundidad de labranza duplica aproximadamente la fuerza de tiro requerida.</p></li>
+<li><p>Velocidad de avance: Existe un efecto de la velocidad sobre la resistencia, especialmente en suelos cohesivos. Velocidades elevadas aumentan la resistencia dinamica al corte hasta en un 20-30% respecto al valor estatico.</p></li>
+<li><p>Angulo de ataque de los elementos de trabajo: El angulo de la reja con la vertical y con el plano horizontal determina las componentes de la fuerza total (tiro, vertical y lateral) y la eficiencia del corte.</p></li>
+<li><p>Estado superficial del suelo: La presencia de rastrojos, terrones duros, piedras o alta densidad de raices aumenta la resistencia irregular y puede causar daños en los implementos.</p></li>
+<li><p>Historia de labranza: Los suelos con labranza reducida o en siembra directa desarrollan una capa de compactacion subsuperficial (hardpan) a la profundidad de la reja, que incrementa la resistencia en labranzas profundas posteriores.</p></li>
+</ul>
+</section>
+</section>
+<section id="potencia-requerida-para-implementos-agrícolas" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="potencia-requerida-para-implementos-agrícolas"><span class="header-section-number">8.5</span> Potencia requerida para implementos agrícolas</h2>
+<section id="cálculo-de-potencia-requerida" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="cálculo-de-potencia-requerida"><span class="header-section-number">8.5.1</span> Cálculo de potencia requerida</h3>
+<p>El calculo de la potencia necesaria para operar un implemento agricola requiere conocer la fuerza de tiro y la velocidad de operacion. El procedimiento general es:</p>
+<div class="procedimiento">
+<ol type="1">
+<li>Calcular la fuerza de tiro del implemento.</li>
+</ol>
+<p><span class="math display">\[
+Ft = k \cdot a \cdot p \cdot n_{cuerpos}
+\]</span> <span class="math display">\[
+Ft = Ft_{especificos} \cdot ancho (otros)
+\]</span></p>
+<ol start="2" type="1">
+<li>Definir la velocidad de avance operacional:</li>
+</ol>
+<p><span class="math inline">\(y_{trabajo}\)</span>: Recomendación del fabricante y condición del campo.</p>
+<ol start="3" type="1">
+<li>Calcular la potencia en barra de tiro:</li>
+</ol>
+<p><span class="math display">\[
+PBT [kW] = Ft [kN] \cdot \dfrac{\vec{v} [km/h]}{ 3.6}
+\]</span> 4. Corregir eficiencia de tracción:</p>
+<p><span class="math display">\[
+P_{TDF} = \dfrac{PBT} { \eta_{traccion}}
+\]</span> <span class="math inline">\(\eta_{traccion} = 0.70 a 0.85\)</span></p>
+<ol start="5" type="1">
+<li>Agregar potencia para la TDF del implemento:</li>
+</ol>
+<p><span class="math display">\[
+P\_TDF\_{total} = P\_TDF_{tiro} + P\_TDF_{implemento}
+\]</span></p>
+<ol start="6" type="1">
+<li>Aplicar factor de seguridad:</li>
+</ol>
+<p><span class="math display">\[
+P\_motor= \dfrac{P\_TDF\_{total}} 0.90
+\]</span></p>
+<ol start="7" type="1">
+<li>Seleccionar tractor:</li>
+</ol>
+<p>Elegir tractor cuya potencia nominal en <span class="math inline">\(TDF &gt;= P\_motor\)</span>.</p>
+</div>
+</section>
+<section id="factores-que-afectan-la-demanda-de-potencia" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="factores-que-afectan-la-demanda-de-potencia"><span class="header-section-number">8.5.2</span> Factores que afectan la demanda de potencia</h3>
+<p>La potencia que un implemento demanda al tractor en condiciones reales de campo puede diferir significativamente del valor calculado teoricamente. Los principales factores de variacion son:</p>
+<ul>
+<li><p>Variabilidad del suelo: Los campos agricolas presentan heterogeneidad espacial en textura, contenido de humedad y grado de compactacion, generando picos de demanda de potencia de hasta 30-50% sobre el valor promedio.</p></li>
+<li><p>Velocidad de avance: La demanda de potencia aumenta con la velocidad, tanto por el efecto sobre la resistencia dinamica de corte como por las mayores perdidas en la transmision.</p></li>
+<li><p>Estado del implemento: El desgaste de las rejas, discos y cuchillas aumenta la demanda de tiro en 15-25%. Las rejas desgastadas ademas deterioran la calidad del trabajo al no cortar limpiamente el suelo.</p></li>
+<li><p>Pendiente del terreno: Cada 1% de pendiente positiva (subida) agrega aproximadamente 1% de demanda de potencia por el componente de la fuerza gravitatoria sobre la masa del tractor y el implemento.</p></li>
+<li><p>Condiciones climaticas: La lluvia reciente aumenta el contenido de humedad y puede reducir la resistencia de corte, pero aumenta el peso sobre las ruedas y el riesgo de patinamiento.</p></li>
+</ul>
+</section>
+<section id="selección-adecuada-del-tractor" class="level3" data-number="8.5.3">
+<h3 data-number="8.5.3" class="anchored" data-anchor-id="selección-adecuada-del-tractor"><span class="header-section-number">8.5.3</span> Selección adecuada del tractor</h3>
+<p>La seleccion del tractor para una operación especifica es una de las decisiones tecnicas mas importantes en la gestion de la maquinaria. Un tractor subdimensionado no podra completar la tarea en la ventana de trabajo disponible o trabajara en sobrecarga constante, acelerando el desgaste. Un tractor sobredimensionado aumenta los costos fijos y puede compactar excesivamente el suelo.</p>
+<section id="criterios-de-seleccion-del-tractor" class="level4" data-number="8.5.3.1">
+<h4 data-number="8.5.3.1" class="anchored" data-anchor-id="criterios-de-seleccion-del-tractor"><span class="header-section-number">8.5.3.1</span> Criterios de Seleccion del Tractor</h4>
+<div class="importante">
+<ul>
+<li><p>Potencia suficiente: La potencia en TDF del tractor debe superar en al menos 15-20% la potencia maxima demandada por el implemento en las condiciones mas exigentes.</p></li>
+<li><p>Peso adecuado: El peso del tractor debe ser suficiente para generar la traccion necesaria sin excesivo patinamiento (&lt; 15% ideal), pero sin comprometer la estructura del suelo.</p></li>
+<li><p>Compatibilidad hidraulica: El caudal y la presion del sistema hidraulico del tractor deben ser compatibles con los requerimientos del implemento.</p></li>
+<li><p>Sistema de enganche: El sistema de enganche de tres puntos (Cat. I, II o III) debe ser compatible con la categoria del implemento segun su peso y la potencia requerida.</p></li>
+<li><p>Relacion peso-potencia: El rango optimo para tractores agricolas de campo es de 30-55 kg por CV (40-75 kg/kW) para lograr el equilibrio entre traccion y compactacion.</p></li>
+</ul>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Categoria de Enganche</strong></td>
+<td><strong>Potencia del Tractor (kW)</strong></td>
+<td><strong>Potencia del Tractor (HP)</strong></td>
+<td><strong>Masa Tipica del Tractor (kg)</strong></td>
+</tr>
+<tr class="even">
+<td>Categoria I</td>
+<td>&lt; 37 kW</td>
+<td>&lt; 50 HP</td>
+<td>1,000 - 2,500</td>
+</tr>
+<tr class="odd">
+<td>Categoria II</td>
+<td>37 - 75 kW</td>
+<td>50 - 100 HP</td>
+<td>2,500 - 5,000</td>
+</tr>
+<tr class="even">
+<td>Categoria III</td>
+<td>75 - 150 kW</td>
+<td>100 - 200 HP</td>
+<td>5,000 - 10,000</td>
+</tr>
+<tr class="odd">
+<td>Categoria IV</td>
+<td>&gt; 150 kW</td>
+<td>&gt; 200 HP</td>
+<td>&gt; 10,000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="problemas-prácticos" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="problemas-prácticos"><span class="header-section-number">8.6</span> Problemas prácticos</h2>
+<section id="cálculo-de-potencia-requerida-para-implementos" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="cálculo-de-potencia-requerida-para-implementos"><span class="header-section-number">8.6.1</span> Cálculo de potencia requerida para implementos</h3>
+<div class="ejercicio">
+<p><strong>Potencia para arado de vertedera</strong></p>
+<p>Un arado de vertedera de 4 cuerpos debe preparar un lote de suelo franco-arcilloso con un contenido de humedad próximo a la capacidad de campo. Cada cuerpo labra un ancho de 35 cm a una profundidad de 25 cm. La resistencia especifica del suelo en estas condiciones es k = 55 N/cm^2. La velocidad de operación es de 6 km/h. La eficiencia de tracción del tractor en suelo semihhumedo es 0.75. Determinar:</p>
+<ol type="a">
+<li><p>Fuerza de tiro total.</p></li>
+<li><p>Potencia en barra de tiro.</p></li>
+<li><p>Potencia requerida en TDF.</p></li>
+<li><p>Potencia mínima del tractor en TDF con factor de seguridad del 15%.</p></li>
+</ol>
+<p>Operaciones:</p>
+<p><em>Fuerza de tiro</em></p>
+<p><span class="math display">\[
+Ft = k * a * p * n_{cuerpos}
+\]</span></p>
+<p><span class="math display">\[
+Ft = 55\hspace{0.2cm} N/cm^2 * 35 \hspace{0.2cm}cm * 25 \hspace{0.2cm}cm * 4 \hspace{0.2cm}cuerpos
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Ft = 192,500 \hspace{0.2cm}N = 192.5  \hspace{0.2cm}kN\)</span></p>
+</div>
+<p><em>Potencia en barra de tiro</em></p>
+<p><span class="math display">\[
+PBT = Ft \cdot \dfrac{\vec{v}}{3.6}
+\]</span></p>
+<p><span class="math display">\[
+PBT= 192.5\hspace{0.2cm} kN \cdot \dfrac{6 \hspace{0.2cm}km/h }{3.6}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(PBT = 380.8\hspace{0.2cm} kW\)</span></p>
+</div>
+<p><em>Potencia requerida</em></p>
+<p><span class="math display">\[
+P\_TDF = \dfrac{PBT}{\eta\_traccion }
+\]</span></p>
+<p><span class="math display">\[
+P\_TDF= \dfrac{320.8 \hspace{0.2cm}kW}{0.75}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(P\_TDF = 427.7 \hspace{0.2cm}kW\)</span></p>
+</div>
+<p><em>Potencia mínima del tractor (con 15% de margen)</em></p>
+<p><span class="math display">\[
+P\_tractor\_min = \dfrac{P\_TDF}{0.85}
+\]</span></p>
+<p><span class="math display">\[
+P\_tractor\_min = \frac{320.8\hspace{0.2cm}kW}{0.85}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(P\_tractor\_min = 427.7\hspace{0.2cm}kW\)</span></p>
+</div>
+<div class="nota">
+<p>El tractor necesario es de alta potencia (<span class="math inline">\(&gt;500 kW / &gt;670 HP\)</span>). Este resultado indica que para este tipo de suelo y profundidad de labranza, seria mas eficiente considerar:</p>
+<ol type="1">
+<li><p>Reducir el numero de cuerpos del arado a 2 o 3 y usar un tractor de menor potencia.</p></li>
+<li><p>Modificar las condiciones de labranza (menor profundidad o esperar condiciones de humedad mas favorables donde k pueda reducirse a <span class="math inline">\(40 - 45 \hspace{0.2cm}N/cm^2\)</span>), lo que reduciría la demanda de potencia a <span class="math inline">\(280 - 350 \hspace{0.2cm} kW\)</span> con el mismo tren de trabajo.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="determinación-de-fuerza-de-tiro" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="determinación-de-fuerza-de-tiro"><span class="header-section-number">8.6.2</span> Determinación de fuerza de tiro</h3>
+<div class="ejercicio">
+<p><strong>Balance de fuerza en labranza en pendiente</strong> Un tractor de 120 kW en barra de tiro (PBT) opera un subsolador de 3 verteres en un campo con pendiente del 8% (positiva, cuesta arriba). Cada verter tiene un ancho de 40 cm y trabaja a 45 cm de profundidad en suelo franco con k = 45 <span class="math inline">\(N/cm^2\)</span>. La masa total del tractor es 6,500 kg y del subsolador 850 kg. Velocidad de avance: 5 km/h.</p>
+<p>Determinar:</p>
+<ol type="a">
+<li><p>Fuerza de tiro para el subsolado.</p></li>
+<li><p>Fuerza adicional por pendiente.</p></li>
+<li><p>Fuerza total necesaria.</p></li>
+<li><p>Verificar si la PBT del tractor es suficiente.</p></li>
+</ol>
+<p>Operaciones:</p>
+<p><em>Fuerza de tiro para el subsolado</em></p>
+<p><span class="math display">\[
+Ft\_subsolado = k \cdot a \cdot p \cdot n
+\]</span></p>
+<p><span class="math display">\[
+Ft\_subsolado= 45 \hspace{0.2cm} N/cm^2 \cdot 40 \hspace{0.2cm}cm \cdot 45 \hspace{0.2cm}cm \cdot 3
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(= 243,000 \hspace{0.2cm}N = 243\hspace{0.2cm}kN\)</span></p>
+</div>
+<p><em>Fuerza adicional por pendiente (i= 8%)</em></p>
+<p>Masa total del sistema</p>
+<p><span class="math display">\[
+m\_total = 6500 + 850 = 7350 \hspace{0.2cm} kg
+\]</span></p>
+<p>Peso total</p>
+<p><span class="math display">\[
+P = m \cdot g = 7350 \cdot 9.81
+\]</span></p>
+<div class="spoiler">
+<p>$P = 72,104 N = 72.1 kN $</p>
+</div>
+<p>Componente de la pendiente</p>
+<p><span class="math display">\[
+F\_pendiente = P \cdot sin(arctan(0.08)) \approx P \cdot 0.08
+\]</span></p>
+<div class="spoiler">
+<p>$ F_pendiente = 5.77 kN$</p>
+</div>
+<p><em>Fuerza total necesaria</em></p>
+<p><span class="math display">\[
+F\_total = Ft\_subsolado + F\_pendiente
+\]</span></p>
+<p><span class="math display">\[
+F\_total = 243 + 5.77
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(F\_total = 248.8 \hspace{0.2cm} kN\)</span></p>
+</div>
+<p><em>Verificar si la PBT del tractor es suficiente</em></p>
+<p>La <span class="math inline">\(FBT\_disponible = 120 \hspace{0.2cm} kW\)</span>.</p>
+<p><span class="math display">\[
+FBT\_necesaria = F\_total \cdot \dfrac{\vec{v}}{3.6}
+\]</span></p>
+<p><span class="math display">\[
+FBT\_necesaria = 248.8 \hspace{0.2cm} kN \cdot \dfrac{5 \hspace{0.2cm} m/s}{3.6}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(F\_total = 345.6 \hspace{0.2cm}kW\)</span></p>
+</div>
+<p>Conclusión: EL tractor no puede completar esta operación, requiere reducir a 1 verter del subsolador o utilizar un tractor de más potencia.</p>
+</div>
+</section>
+<section id="evaluación-de-eficiencia-energética" class="level3" data-number="8.6.3">
+<h3 data-number="8.6.3" class="anchored" data-anchor-id="evaluación-de-eficiencia-energética"><span class="header-section-number">8.6.3</span> Evaluación de eficiencia energética</h3>
+<div class="ejercicio">
+<p>Un tractor de 90 kW de potencia en TDF trabaja con una rastra de discos de 3.2 m de ancho a 8 km/h. El coeficiente de resistencia de la rastra es de 3.5 kN/m de ancho. El motor opera al 75% de carga. El consumo especifico del motor es 245 g/kWh y la densidad del gasoil es 0.84 kg/L. El precio del gasoil es 1.20 USD/L. Calcular:</p>
+<ol type="a">
+<li><p>Fuerza de tiro y PBT requerida.</p></li>
+<li><p>Verificación del aprovechamiento de la potencia del tractor.</p></li>
+<li><p>Consumo de combustible en L/h y L/ha.</p></li>
+<li><p>Costo de combustible por hectárea.</p></li>
+<li><p>Eficiencia energética de la operación.</p></li>
+</ol>
+<p><em>Fuerza de tiro y PBT requerida</em></p>
+<p><span class="math display">\[
+Ft = resistencia\_especifica \cdot ancho
+\]</span></p>
+<p><span class="math display">\[
+Ft = 3.5 \hspace{0.2cm}kN \cdot 3.2\hspace{0.2cm} m
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Ft = 11.2 kN\)</span></p>
+</div>
+<p><span class="math display">\[
+FBT\_necesaria = 11.2 \hspace{0.2cm}kN \cdot \dfrac{8 \hspace{0.2cm}km/h}{3.6}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(FBT\_necesaria = 24.9 \hspace{0.2cm} kW\)</span></p>
+</div>
+<p><em>Verificación del aprovechamiento de la potencia del tractor</em></p>
+<p>Asumiendo: <span class="math inline">\(\eta\_tracción = 0.78\)</span></p>
+<p><span class="math display">\[
+P\_TDF\_necesaria = \dfrac{24.9} {0.78}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(P\_TDF\_necesaria = 31.9 \hspace{0.2cm} kW\)</span></p>
+</div>
+<p><em>Consumo de combustible en L/h y L/ha</em></p>
+<p>75% de descarga.</p>
+<p><span class="math display">\[
+P\_motor\_real = 90 \hspace{0.2cm} kW \cdot 0.75
+\]</span></p>
+<div class="spoiler">
+<p>$ P_motor_real = 67.5 kW $</p>
+</div>
+<p><span class="math display">\[
+Consumo\_masico \hspace{0.2cm} [kg/h] = P\_motor \cdot ce = 67.5 \cdot \dfrac{245}{1000}  
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Consumo masico [kg/h] = 16.5 kg/h\)</span></p>
+</div>
+<p><span class="math display">\[
+Consumo\_volumetrico \hspace{0.2cm} [L/h] = \dfrac{16.5}{0.84}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Consumo\_volumetrico \hspace{0.2cm} = 19.7 \hspace{0.2cm} L/h\)</span></p>
+</div>
+<p><span class="math inline">\(n\_campo = 0.8\)</span> eficiencia de campo que descuenta tiempos de giros y paradas.</p>
+<p><span class="math display">\[
+Capacidad\_de\_campo efectiva \hspace{0.2cm} (CCE) = \vec{v} \cdot ancho \cdot η\_campo = 8 \cdot 3.2 \cdot 0.80
+\]</span></p>
+<div class="spoiler">
+<p>$Capacidad_de_campo efectiva (CCE) = 20.5 ha/h $</p>
+</div>
+<p><span class="math display">\[
+Consumo\_por\_ hectarea \hspace{0.2cm}[L/ha] = \dfrac{19.7\hspace{0.2cm} L/h}{ 20.5 \hspace{0.2cm}ha/h}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Consumo\_por\_ hectarea \hspace{0.2cm}[L/ha] = 0.96 \hspace{0.2cm}L/ha\)</span></p>
+</div>
+<p><em>Costo de combustible por hectárea</em></p>
+<p>Considerando el costo del diesel $ 28.00 pesos mexicanos.</p>
+<p><span class="math display">\[
+Costo\_combustible = 0.96 \hspace{0.2cm}L/ha \cdot 28 \hspace{0.2cm}L/ha
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(Costo\_combustible = 26.88 \hspace{0.2cm} Pesos / ha\)</span></p>
+</div>
+<p><em>Eficiencia energética de la operación</em> :::</p>
+<p>Energia aportada por combustible [MJ/ha]:</p>
+<p><span class="math inline">\(PCI\_gasoil = 35,900 kJ/L\)</span></p>
+<p><span class="math inline">\(Consumo = 0.96 L/ha\)</span></p>
+<p><span class="math inline">\(E\_combustible = 0.96 * 35,900 = 34,464 kJ/ha = 34.5 MJ/ha\)</span></p>
+<p>Energia de trabajo de labranza [kJ/ha]:</p>
+<p><span class="math display">\[
+W\_labranza = Ft \hspace{0.2cm} [kN] \cdot \dfrac{10,000}{ancho \hspace{0.2cm} [m]}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(= 11.2 * 10,000 / 3.2 = 35,000 kJ/ha = 35.0 MJ/ha\)</span></p>
+</div>
+<p><span class="math display">\[
+η\_energetica = \frac{W\_labranza}{E\_combustible}
+\]</span></p>
+<div class="spoiler">
+<p><span class="math inline">\(η\_energetica = = 35.0 / 34.5 ≈ 101 \%\)</span></p>
+</div>
+<p>El valor &gt; 100% parece paradójico pero es correcto: el motor opera a 75% de su potencia nominal (67.5 kW), pero la rastra solo usa 31.9 kW de la TDF. La diferencia de potencia (35.6 kW) genera calor y ruido. La eficiencia ‘verdadera’ referida a la potencia motor utilizada es: 35.0 / (34.5 * 0.354) = 285%, lo que confirma que la rastra es una operación de muy baja demanda energética unitaria, ideal para tractores que no tienen implementos de mayor anchura disponibles.</p>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../U1/1_6.html" class="pagination-link" aria-label="Problemas prácticos y ejercicios aplicados">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Problemas prácticos y ejercicios aplicados</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../U2/3_1.html" class="pagination-link" aria-label="Clasificación y características de los tractores">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Clasificación y características de los tractores</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
